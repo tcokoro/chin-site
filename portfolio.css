@@ -1,0 +1,37 @@
+html {}
+
+body {}
+
+.portfolio-pg-container {
+	background-color: rgb(179, 179, 179);
+	height: 100%;
+}
+
+.nav {
+	height: 40px;
+	background-color: rgb(66, 133, 244);
+	color: rgb(255,255,255);
+}
+
+	.nav a:visited {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+	}
+
+	.nav a:hover {
+		text-decoration: none;
+	}
+
+.tables {
+	position: relative;
+	top: 50px;
+}
+
+.p-table {
+	background-color: rgb(255, 255, 255);
+	font-size: 12px;
+}
+
+.date-table {
+	margin-right: 10px;
+}
