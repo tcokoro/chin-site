@@ -28,8 +28,12 @@ body {}
 	margin: 0 auto;
 	width:600px;
 }
+	.research-statement {
+		margin-top: 50px;
+	}
 
 .main-img  img{
 	width: 600px;
 }
+
 

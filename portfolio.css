@@ -3,7 +3,7 @@ html {}
 body {}
 
 .portfolio-pg-container {
-	background-color: rgb(179, 179, 179);
+	background-color: rgb(231, 230, 221);
 	height: 100%;
 }
 
@@ -34,4 +34,8 @@ body {}
 
 .date-table {
 	margin-right: 10px;
+}
+
+.year-fund-table {
+	margin-left: 10px;
 }
