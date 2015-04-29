@@ -5,7 +5,6 @@
 
 angular.module('portfolioApp', [])
 	.controller('historicalController', ['$scope', function($scope) {
-		$scope.test = "test1";
 		$scope.monthSelectOptions = [{ 
 				name: "January", order: 0
 			},{
