@@ -2308,12 +2308,15 @@ emrg_mrkt:'0%',intl_stk:'0%',small_cap:'18%',large_cap:'22%',cash:'23%'
 },{
 date:'4/1/2015',volatility:'5%',commdty:'0%',ig_bnd:'0%',hy_bnd:'21%',govt_bnd:'8%',reit:'11%',
 emrg_mrkt:'0%',intl_stk:'0%',small_cap:'26%',large_cap:'22%',cash:'7%'
+},{
+date: '5/1/2015',volatility:'3%',commdty:'0%',ig_bnd:'0%',hy_bnd:'18%',govt_bnd:'5%',reit:'5%',
+emrg_mrkt:'21%',intl_stk:'17%',small_cap:'3%',large_cap:'21%',cash:'8%'
 }];
 			
 
 		$scope.filtered_entries = $scope.entries.sort(sortEntries);
 		$scope.year_fund = [{
-YEAR:'YTD',Model:'-1.79%',SP500:'0.92%',MSCI_WORLD:'2.37%'
+YEAR:'YTD (5/1/2015)',Model:'-5.01%',SP500:'1.92%',MSCI_WORLD:'4.02%'
 },{
 YEAR:'2014',Model:'8.48%',SP500:'13.69%',MSCI_WORLD:'4.81%'
 },{
