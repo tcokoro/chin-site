@@ -27,9 +27,22 @@ body {}
 }
 
 .p-table {
-	/*background-color: rgb(255, 255, 255);*/
+	background-color: rgb(255, 255, 255);
 	font-size: 12px;
 }
+
+.hist-table thead {
+	position: relative;
+	display: block;
+}
+
+.hist-table tbody {
+	display: block;
+	overflow: scroll;
+	height: 600px;
+}
+
+.hist-table td { width: 75px;}
 
 .date-table {
 	margin-right: 10px;
