@@ -1,0 +1,201 @@
+<!DOCTYPE>
+<html ng-app="portfolioApp">
+	<head>
+		<link rel="stylesheet" href="summary.css"/>
+		<link rel="stylesheet" href="resources/bootstrap-3.3.2-dist/css/bootstrap.min.css"/>
+		<script src="resources/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+		<script src="resources/angular.min.js"></script>
+		<script src="portfolio.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid portfolio-pg-container">
+			<div class="row nav">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-offset-1">
+							<div class="row"><h3><a href="home.html">Old Pine Capital</a></h3></div>
+						</div>
+					</div>
+				</div>
+			</div><!-- row nav -->
+
+			<div class="row tabs">
+				<ul class="tabs-list">
+					<li class="tabs-list__item">
+						<a class="tabs-list__link" href="summary.html">Summary</a>
+						<div class="tabs-list__item-underline--sm"></div>
+					</li>
+					<li class="tabs-list__item">
+						<a class="tabs-list__link" href="portfolio.html">Current Portfolio</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="tables" ng-controller="historicalController">
+				<!-- stats table -->
+				<div class="row stats">
+					<div class="stats__header">
+						<p class="lead"><small>Stats Table</small></p>
+					</div>
+
+					<table class="table stats-table">
+						<thead>
+							<tr class="info stats-table__row">
+								<th class="stats-table__col">Y2000-Y2014</th>
+								<th class="stats-table__col">MODEL</th>
+								<th class="stats-table__col">SPXT</th>
+								<th class="stats-table__col">MSCI WORLD</th>
+								<th class="stats-table__col">MORNING STAR INDEX</th>
+								<th class="stats-table__col">"60/40" FUND</th>
+								<th class="stats-table__col">10YR TRES. FUND</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="stats-table__col">CAGR</td>
+								<td class="stats-table__col">14.07%</td>
+								<td class="stats-table__col">4.33%</td>
+								<td class="stats-table__col">1.34%</td>
+								<td class="stats-table__col">3.38%</td>
+								<td class="stats-table__col">5.79%</td>
+								<td class="stats-table__col">6.57%</td>
+							</tr>
+							<tr>
+								<td class="stats-table__col">SDEV</td>
+								<td class="stats-table__col">7.23%</td>
+								<td class="stats-table__col">15.24%</td>
+								<td class="stats-table__col">16.25%</td>
+								<td class="stats-table__col">9.09%</td>
+								<td class="stats-table__col">8.41%</td>
+								<td class="stats-table__col">6.51%</td>
+							</tr>
+							<tr>
+								<td class="stats-table__col">ALPHA(Monthly)</td>
+								<td class="stats-table__col">1.14%</td>
+								<td class="stats-table__col">0.00%</td>
+								<td class="stats-table__col">-0.24%</td>
+								<td class="stats-table__col">0.06%</td>
+								<td class="stats-table__col">0.26%</td>
+								<td class="stats-table__col">0.60%</td>
+							</tr>
+							<tr>
+								<td class="stats-table__col">BETA</td>
+								<td class="stats-table__col">-0.038</td>
+								<td class="stats-table__col">1</td>
+								<td class="stats-table__col">1.019</td>
+								<td class="stats-table__col">0.56</td>
+								<td class="stats-table__col">0.523</td>
+								<td class="stats-table__col">-0.129</td>
+							</tr>
+							<tr>
+								<td class="stats-table__col">RSQUARED</td>
+								<td class="stats-table__col">0.64%</td>
+								<td class="stats-table__col">100%</td>
+								<td class="stats-table__col">91%</td>
+								<td class="stats-table__col">88%</td>
+								<td class="stats-table__col">90%</td>
+								<td class="stats-table__col">9%</td>
+							</tr>
+							<tr>
+								<td class="stats-table__col">CORR</td>
+								<td class="stats-table__col">-0.08</td>
+								<td class="stats-table__col">1</td>
+								<td class="stats-table__col">0.96</td>
+								<td class="stats-table__col">0.94</td>
+								<td class="stats-table__col">0.95</td>
+								<td class="stats-table__col">-0.3</td>
+							</tr>
+							<tr>
+								<td class="stats-table__col">DOWNSIDE(SPX) CORR</td>
+								<td class="stats-table__col">-0.5</td>
+								<td class="stats-table__col">1</td>
+								<td class="stats-table__col">0.92</td>
+								<td class="stats-table__col">0.88</td>
+								<td class="stats-table__col">0.89</td>
+								<td class="stats-table__col">-0.14</td>
+							</tr>
+							<tr>
+								<td class="stats-table__col">MAXDD</td>
+								<td class="stats-table__col">-8.03%</td>
+								<td class="stats-table__col">-50.95%</td>
+								<td class="stats-table__col">-56.23%</td>
+								<td class="stats-table__col">-34.07</td>
+								<td class="stats-table__col">-27.24%</td>
+								<td class="stats-table__col">-7.37%</td>
+							</tr>
+							<tr>
+								<td class="stats-table__col">SHARPE(3%)</td>
+								<td class="stats-table__col"></td>
+								<td class="stats-table__col">0.11</td>
+								<td class="stats-table__col">-0.1</td>
+								<td class="stats-table__col">0.07</td>
+								<td class="stats-table__col">0.38</td>
+								<td class="stats-table__col">0.62</td>
+							</tr>
+							<tr>
+								<td class="stats-table__col">INFORMATION RATIO</td>
+								<td class="stats-table__col">2.05</td>
+								<td class="stats-table__col"></td>
+								<td class="stats-table__col">-0.49</td>
+								<td class="stats-table__col">0.33</td>
+								<td class="stats-table__col">1.12</td>
+								<td class="stats-table__col">1.13</td>
+							</tr>
+							<tr>
+								<td class="stats-table__col">WORST MONTH</td>
+								<td class="stats-table__col">-4.98%</td>
+								<td class="stats-table__col">-16.79%</td>
+								<td class="stats-table__col">-19.91%</td>
+								<td class="stats-table__col">-11.40%</td>
+								<td class="stats-table__col">-9.54%</td>
+								<td class="stats-table__col">-5.68%</td>
+							</tr>
+							<tr>
+								<td class="stats-table__col">BEST MONTH</td>
+								<td class="stats-table__col">7.98%</td>
+								<td class="stats-table__col">10.93%</td>
+								<td class="stats-table__col">11.48%</td>
+								<td class="stats-table__col">5.57%</td>
+								<td class="stats-table__col">6.89%</td>
+								<td class="stats-table__col">7.99%</td>
+							</tr>
+						</tbody>
+					</table>
+				</div> <!-- stats -->
+
+				<!-- year and fund table -->
+				<div class="row year-fund">
+					<div class="year-fund__header"><p class="lead"><small> Year Fund</small></p></div>
+					<table class="table year-fund-table table-hover">
+						<thead>
+							<tr class="info year-fund-table__row">
+								<th class="year-fund-table__col">YEAR</th>
+								<th class="year-fund-table__col">MODEL</th>
+								<th class="year-fund-table__col">SP500</th>
+								<th class="year-fund-table__col">MSCI WORLD</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="entry in year_fund">
+								<td class="year-fund-table__col">{{entry.YEAR}}</td>
+								<td class="year-fund-table__col">{{entry.MODEL}}</td>
+								<td class="year-fund-table__col">{{entry.SP500}}</td>
+								<td class="year-fund-table__col">{{entry.MSCI_WORLD}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div> <!-- year-fund -->							
+			</div> <!-- tables -->
+			<footer class="row">
+				<div class="col-md-8 col-md-offset-1">
+					<div class="row">
+						<div class="row main-content">
+							<p>@ 2015 Old Pine Capital, LLC</p> 
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div> <!-- container-fluid -->
+
+	</body>
+</html>

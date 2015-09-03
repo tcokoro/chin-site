@@ -1,0 +1,103 @@
+.portfolio-pg-container {
+	background-color: rgb(231, 230, 221);
+}
+
+.tabs {
+	position: relative;
+	top: 20px;
+	display: inline-block;
+	width: 100%;
+	padding: 0 10% 0 10%;
+}
+
+.tabs-list {
+	padding: 0;
+	list-style: none;
+	color: rgb(66, 133, 244);
+	font-weight: bold;
+}
+
+.tabs-list__item {
+	float:left;
+	margin: 0 20px 0 0;
+}
+
+.tabs-list__link {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.tabs-list__link:hover {
+	position: relative;
+	top: -1px;
+}
+
+
+.tabs-list__link:hover {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.tabs-list__item-underline--sm {
+	height: 8px;
+	width: 60px;
+	background-color: rgb(244, 180, 80);
+	margin-top: 10px;
+}
+
+.tabs-list__item-underline--lg {
+	height: 8px;
+	width: 110px;
+	background-color: rgb(0,0,0);
+	margin-top: 10px;
+}
+
+.year-fund {
+	padding: 0 10% 0 10%;
+}
+
+.year-fund-table {
+	background-color: rgb(255, 255, 255);
+	font-size: 12px;
+}
+
+.year-fund-table__col {
+	text-align: center;
+}
+
+.stats {
+	padding: 0 10% 0 10%;
+}
+
+.stats-table {
+	background-color: rgb(255, 255, 255);
+	font-size:  12px;
+}
+
+.stats-table__col {
+	text-align: center;
+}
+
+.nav {
+	height: 60px;
+	background-color: rgb(66, 133, 244);
+	color: rgb(255,255,255);
+}
+
+	.nav a:visited {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+	}
+
+	.nav a:hover {
+		text-decoration: none;
+	}
+
+.tables {
+	position: relative;
+	top: 50px;
+}
+
+footer {
+	margin-top: 100px;
+}

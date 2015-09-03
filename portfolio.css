@@ -21,9 +21,60 @@ body {}
 		text-decoration: none;
 	}
 
+.tabs {
+	position: relative;
+	top: 20px;
+	display: inline-block;
+	width: 100%;
+	padding: 0 10% 0 10%;
+}
+
+.tabs-list {
+	padding: 0;
+	list-style: none;
+	color: rgb(66, 133, 244);
+	font-weight: bold;
+}
+
+.tabs-list__item {
+	float:left;
+	margin: 0 20px 0 0;
+}
+
+.tabs-list__link {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.tabs-list__link:hover {
+	position: relative;
+	top: -1px;
+}
+
+
+.tabs-list__link:hover {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.tabs-list__item-underline--sm {
+	height: 8px;
+	width: 60px;
+	background-color: rgb(244, 180, 80);
+	margin-top: 10px;
+}
+
+.tabs-list__item-underline--lg {
+	height: 8px;
+	width: 110px;
+	background-color: rgb(244, 180, 80);
+	margin-top: 10px;
+}
+
 .tables {
 	position: relative;
 	top: 50px;
+	padding: 0 10% 0 10%;
 }
 
 .p-table {
@@ -31,18 +82,25 @@ body {}
 	font-size: 12px;
 }
 
-.hist-table thead {
-	position: relative;
-	display: block;
+.historical-exposure__header {
+	margin: 20px 0 20px 0;
 }
 
-.hist-table tbody {
+/*.hist-table thead {
+	position: relative;
+	display: block;
+}*/
+
+/*.hist-table tbody {
 	display: block;
 	overflow: scroll;
 	height: 600px;
-}
+}*/
 
-.hist-table td { width: 75px;}
+/*.hist-table td { width: 75px;}*/
+.date-filter-options {
+	margin-bottom: 20px;
+}
 
 .date-table {
 	margin-right: 10px;
@@ -60,9 +118,14 @@ body {}
 	font-size: 16px;
 }
 
-td {
+.current-exposure-table__col {
 	text-align: center;
 }
+
+.historical-exposure-table__col {
+	text-align: center;
+}
+
 footer {
 	margin-top: 100px;
 }
