@@ -84,14 +84,30 @@
 	color: rgb(255,255,255);
 }
 
+.nav__link {
+	color:inherit;
+	text-decoration: inherit;
+}
+
+.nav__link:hover {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.nav__link:visited {
+	color: inherit;
+	text-decoration: inherit;
+}
+/*
 	.nav a:visited {
-		text-decoration: none;
+		text-decoration: inherit;
 		color: rgb(255, 255, 255);
 	}
 
 	.nav a:hover {
-		text-decoration: none;
-	}
+		color: inherit;
+		text-decoration: inherit;
+	}*/
 
 .tables {
 	position: relative;
