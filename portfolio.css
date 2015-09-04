@@ -10,15 +10,16 @@ body {}
 	height: 60px;
 	background-color: rgb(66, 133, 244);
 	color: rgb(255,255,255);
+	text-decoration: inherit;
 }
 
 	.nav a:visited {
-		text-decoration: none;
+		text-decoration: inherit;
 		color: rgb(255, 255, 255);
 	}
 
 	.nav a:hover {
-		text-decoration: none;
+		text-decoration: inherit;
 	}
 
 .tabs {
