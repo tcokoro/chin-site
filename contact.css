@@ -1,0 +1,55 @@
+.portfolio-pg-container {
+	background-color: rgb(231, 230, 221);
+}
+
+.nav {
+	height: 60px;
+	background-color: rgb(66, 133, 244);
+	color: rgb(255,255,255);
+}
+
+.nav__link {
+	color: inherit;
+	text-decoration: inherit;
+}
+.nav__link:hover {
+	color: inherit;
+	text-decoration: inherit;
+}	
+.nav__link:visited {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.contact-form {
+	width: 400px;
+	margin: 60px auto;
+}
+
+.contact-form__label {
+	display: block;
+	margin: 0 0 10px 0;
+}
+
+.contact-form__textbox {
+	width: 400px;
+	height: 40px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.contact-form__textarea {
+	width: 400px;
+	height: 200px;
+}
+
+.contact-form__btn-field {
+	text-align: center;
+	margin: 40px 0 0 0;
+}
+
+.contact-form__btn {
+	width: 150px;
+	height: 50px;
+	border-radius: 10px;
+}

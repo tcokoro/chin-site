@@ -1,0 +1,170 @@
+<!DOCTYPE>
+<html ng-app="portfolioApp">
+	<head>
+		<link rel="stylesheet" href="portfolio2.css"/>
+		<link rel="stylesheet" href="resources/bootstrap-3.3.2-dist/css/bootstrap.min.css"/>
+		<script src="resources/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+		<script src="resources/angular.min.js"></script>
+		<script src="portfolio.js"></script>
+	</head>
+	<body>
+		
+		<div class="container-fluid portfolio-pg-container">
+		<!-- 	<div class="row nav">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-offset-1">
+							<div class="row"><h3><a href="home.html">Old Pine Capital</a></h3></div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+			<div class="tables" ng-controller="historicalController">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="row">
+							<p class="lead"><small> Current Portfolio Exposure </small></p>
+						</div>
+					</div>
+				</div>
+				<div class="row current-exposure">
+					<!-- Current Portfolio Exposure table -->
+					<div>
+						<div class="row">
+
+							<table class="table p-table table-hover">
+								<tr class="info">
+									<th>DATE</th>
+									<th>VOLATILITY</th>
+									<th>COMMDTY</th>
+									<th>IG BND</th>
+									<th>HY BND</th>
+									<th>GOVT BND</th>
+									<th>REIT</th>
+									<th>EMRG MRKT</th>
+									<th>INTL STK</th>
+									<th>SMALL CAP</th>
+									<th>LARGE CAP</th>
+									<th>CASH</th>
+								</tr>
+								<tr class="warning">
+									<td>7/1/2015</td>
+									<td>3%</td>
+									<td>0%</td>
+									<td>2%</td>
+									<td>0%</td>
+									<td>0%</td>
+									<td>0%</td>
+									<td>0%</td>
+									<td>0%</td>
+									<td>25%</td>
+									<td>27%</td>
+									<td>43%</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="row">
+							<p class="lead"><small> Historical Exposure (Live tracking since 06/2014)</small></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- date filter options -->
+				<div class="row date-filter-options">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="row">
+							<span>From: </span>
+							<select  ng-options="month.name for month in monthSelectOptions" ng-model="start_month"></select>
+							<select ng-options="year.date for year in yearSelectOptions" ng-model="start_yr"></select>
+							<span>To: </span>
+							<select ng-options="month.name for month in monthSelectOptions" ng-model="end_month"></select>
+							<select ng-options="year.date for year in yearSelectOptions" ng-model="end_yr"></select>
+							<button type="button" ng-click="refreshTable()"=> Go </button>
+							<!-- <button type="button" class="btn btn-default">Success</button> -->
+							<!-- <button type="button" class="btn btn-default">Success</button> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<!-- Historical Exporsure table-->
+					<div class="col-md-7 col-md-offset-1">
+						<div class="row">
+							<table class="table p-table table-hover hist-table">
+								<thead>
+									<tr class="info">
+										<th>DATE</th>
+										<th>VOLATILITY</th>
+										<th>COMMDTY</th>
+										<th>IG BND</th>
+										<th>HY BND</th>
+										<th>GOVT BND</th>
+										<th>REIT</th>
+										<th>EMRG MRKT</th>
+										<th>INTL STK</th>
+										<th>SMALL CAP</th>
+										<th>LARGE CAP</th>
+										<th>CASH</th>
+
+									</tr>
+								</thead>
+								<tbody>
+									<tr ng-repeat="entry in filtered_entries">
+										<td>{{entry.date}}</td>
+										<td>{{entry.volatility}}</td>
+										<td>{{entry.commdty}}</td>
+										<td>{{entry.ig_bnd}}</td>
+										<td>{{entry.hy_bnd}}</td>
+										<td>{{entry.govt_bnd}}</td>
+										<td>{{entry.reit}}</td>
+										<td>{{entry.emrg_mrkt}}</td>
+										<td>{{entry.intl_stk}}</td>
+										<td>{{entry.small_cap}}</td>
+										<td>{{entry.large_cap}}</td>
+										<td>{{entry.cash}}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>	<!-- historical exposure table -->
+
+					<!-- year and fund table -->
+					<div class="col-md-1 year-fund-table">
+						<div class="row">
+							<table class="table p-table table-hover">
+								<tr class="info">
+									<th>YEAR</th>
+									<th>MODEL</th>
+									<th>SP500</th>
+									<th>MSCI WORLD</th>
+								</tr>
+								<tr ng-repeat="entry in year_fund">
+									<td>{{entry.YEAR}}</td>
+									<td>{{entry.MODEL}}</td>
+									<td>{{entry.SP500}}</td>
+									<td>{{entry.MSCI_WORLD}}</td>
+								</tr>
+							</table>
+						</div>
+					</div>	
+							
+				</div>
+			</div>
+			<footer class="row">
+				<div class="col-md-8 col-md-offset-1">
+					<div class="row">
+						<div class="row main-content">
+							<p>@ 2015 Old Pine Capital, LLC</p> 
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

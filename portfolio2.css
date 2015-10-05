@@ -1,0 +1,36 @@
+
+.current-exposure {
+	padding: 0 10% 0 10%;
+}
+
+.hist-table tbody {
+	display: block;
+	overflow: scroll;
+	height: 500px;
+}
+
+/*@media screen and (max-width: 600px) {
+	thead {
+		display: none;
+	}
+
+	tr {
+		display: block;
+	}
+
+	td {
+		display: block;
+		text-align: right;
+	}
+
+		td:before {
+			content: attr(data-label);
+			float: left;
+		}
+}
+
+@media screen and (min-width: 600px) {
+	.port-exposure {
+		padding: 0 10% 0 10%;
+	}
+}*/

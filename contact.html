@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<link rel="stylesheet" href="contact.css"/>
+		<link rel="stylesheet" href="resources/bootstrap-3.3.2-dist/css/bootstrap.min.css"/>
+		<script src="resources/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="contact.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid portfolio-pg-container">
+			<div class="row nav">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-offset-1">
+							<div class="row"><h3><a class="nav__link" href="home.html">Old Pine Capital</a></h3></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- contact form -->
+			<div class="contact">
+				<form id="form-contact" class="contact-form" method="post" action="mailer.php">
+					<div class="">
+						<label class="contact-form__label" for="name">Name: </label>
+						<input id="name" class="contact-form__textbox" type="text" name="name" required></input>
+					</div>
+
+					<div>
+						<label class="contact-form__label" for="email">Email: </label>
+						<input id="email" class="contact-form__textbox" type="text" name="email" required></input>
+					</div>
+
+					<div>
+						<label class="contact-form__label" for="message">Message: </label>
+						<textarea id="message" class="contact-form__textarea" name="message" required></textarea>
+					</div>
+
+					<div class="contact-form__btn-field">
+						<button class="contact-form__btn" type="submit">Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
