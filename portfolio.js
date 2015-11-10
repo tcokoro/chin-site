@@ -2439,7 +2439,7 @@ emrg_mrkt:'3.00',intl_stk:'7.00',small_cap:'4.00',large_cap:'25.00',cash:'0.00'
 
 		$scope.filtered_entries = $scope.entries.sort(sortEntries);
 		$scope.year_fund = [{
-YEAR:'YTD (10/2/2015)',MODEL:'-2.63',SP500:'3.92',MSCI_WORLD:'0.32'
+YEAR:'YTD (11/3/2015)',MODEL:'-2.63',SP500:'3.92',MSCI_WORLD:'0.32'
 },{
 YEAR:'2014',MODEL:'6.67',SP500:'13.69',MSCI_WORLD:'4.81'
 },{
