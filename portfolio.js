@@ -33,16 +33,50 @@ angular.module('portfolioApp', [])
 
 		$scope.yearSelectOptions = [{date: 2000},{date: 2001},{date: 2002},{date: 2003},{date: 2004},
 		{date: 2005},{date: 2006},{date: 2007},{date: 2008},{date: 2009},{date: 2010},{date: 2011},
-		{date: 2012},{date: 2013},{date: 2014},{date: 2015}];
+		{date: 2012},{date: 2013},{date: 2014},{date: 2015}, {date: 2016}];
 
 		$scope.start_month =  $scope.monthSelectOptions[0];
 		$scope.start_yr = $scope.yearSelectOptions[0];
 		$scope.end_month = $scope.monthSelectOptions[0];
 		$scope.end_yr = $scope.yearSelectOptions[$scope.yearSelectOptions.length - 1];
 		
-		$scope.entries = [{
-			date:'11/3/2015',volatility:'10.00',commdty:'0.00',ig_bnd:'0.37',hy_bnd:'0.00',govt_bnd:'6.20',reit:'6.42',
-			emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'0.00',large_cap:'55.77',cash:'21.24'
+		$scope.entries = [
+{
+	date:'1/6/2016',volatility:'10.00',commdty:'0.00',ig_bnd:'0.00',hy_bnd:'0.00',govt_bnd:'10.48',reit:'4.52',
+	emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'0.00',large_cap:'0.00',cash:'75.00'
+},{
+	date:'1/5/2016',volatility:'10.00',commdty:'0.00',ig_bnd:'0.00',hy_bnd:'0.00',govt_bnd:'10.48',reit:'4.52',
+	emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'0.00',large_cap:'45.07',cash:'29.92'
+},{
+	date:'12/24/2015',volatility:'10.00',commdty:'0.00',ig_bnd:'0.00',hy_bnd:'0.00',govt_bnd:'4.57',reit:'7.32',
+	emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'0.00',large_cap:'0.00',cash:'78.11'
+},{
+	date:'12/22/2015',volatility:'10.00',commdty:'0.00',ig_bnd:'0.75',hy_bnd:'0.00',govt_bnd:'4.57',reit:'7.32',
+	emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'0.00',large_cap:'0.00',cash:'77.36'
+},{
+	date:'12/11/2015',volatility:'10.00',commdty:'0.00',ig_bnd:'0.75',hy_bnd:'0.00',govt_bnd:'4.57',reit:'7.32',
+	emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'0.00',large_cap:'48.50',cash:'28.87'
+},{
+	date:'12/8/2015',volatility:'10.00',commdty:'0.00',ig_bnd:'0.75',hy_bnd:'0.00',govt_bnd:'4.57',reit:'8.13',
+	emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'0.00',large_cap:'48.50',cash:'28.05'
+},{
+	date:'12/7/2015',volatility:'10.00',commdty:'0.00',ig_bnd:'0.75',hy_bnd:'0.00',govt_bnd:'0.00',reit:'8.13',
+	emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'0.00',large_cap:'48.50',cash:'32.62'
+},{
+	date:'12/2/2015',volatility:'10.00',commdty:'0.00',ig_bnd:'0.75',hy_bnd:'0.00',govt_bnd:'5.38',reit:'8.13',
+	emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'0.00',large_cap:'48.50',cash:'27.25'
+},{
+	date:'12/1/2015',volatility:'10.00',commdty:'0.00',ig_bnd:'0.37',hy_bnd:'0.00',govt_bnd:'7.29',reit:'0.00',
+	emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'0.00',large_cap:'55.77',cash:'26.57'
+},{
+	date:'11/17/2015',volatility:'10.00',commdty:'0.00',ig_bnd:'0.37',hy_bnd:'0.00',govt_bnd:'0.00',reit:'0.0',
+	emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'0.00',large_cap:'55.77',cash:'33.87'
+},{
+	date:'11/10/2015',volatility:'10.00',commdty:'0.00',ig_bnd:'0.37',hy_bnd:'0.00',govt_bnd:'0.00',reit:'5.78',
+	emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'0.00',large_cap:'55.77',cash:'28.09'
+},{
+	date:'11/3/2015',volatility:'10.00',commdty:'0.00',ig_bnd:'0.37',hy_bnd:'0.00',govt_bnd:'6.20',reit:'6.42',
+	emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'0.00',large_cap:'55.77',cash:'21.24'
 },{
 date:'10/28/2015', volatility:'10.00',commdty:'0.00',ig_bnd:'3.62',hy_bnd:'0.00',govt_bnd:'30.66',
 reit:'23.55',emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'0.00',large_cap:'0.00',cash:'32.37'
@@ -2439,7 +2473,9 @@ emrg_mrkt:'3.00',intl_stk:'7.00',small_cap:'4.00',large_cap:'25.00',cash:'0.00'
 
 		$scope.filtered_entries = $scope.entries.sort(sortEntries);
 		$scope.year_fund = [{
-YEAR:'YTD (11/3/2015)',MODEL:'-2.63',SP500:'3.92',MSCI_WORLD:'0.32'
+YEAR:'YTD (1/6/2016)',MODEL:'1.13',SP500:'-1.31',MSCI_WORLD:'-1.93'
+},{
+YEAR:'2015',MODEL:'-3.09',SP500:'1.38',MSCI_WORLD:'-4.26'
 },{
 YEAR:'2014',MODEL:'6.67',SP500:'13.69',MSCI_WORLD:'4.81'
 },{
