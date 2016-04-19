@@ -42,7 +42,25 @@ angular.module('portfolioApp', [])
 		
 		$scope.entries = [
 {
-date:'3/1/2016',volatility:'13.32',commdty:'42.41',ig_bnd:'2.15',hy_bnd:'0.00',govt_bnd:'16.47',reit:'0.00',
+date:'4/7/2016',volatility:'19.12',commdty:'11.74',ig_bnd:'7.31',hy_bnd:'4.28',govt_bnd:'7.49',reit:'10.58',
+emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'1.78',large_cap:'8.26',cash:'29.45'
+},{
+date:'4/6/2016',volatility:'19.12',commdty:'11.74',ig_bnd:'7.31',hy_bnd:'4.28',govt_bnd:'7.49',reit:'10.58',
+emrg_mrkt:'8.26',intl_stk:'0.00',small_cap:'1.78',large_cap:'8.26',cash:'21.18'
+},{
+date:'4/4/2016',volatility:'19.12',commdty:'11.74',ig_bnd:'7.31',hy_bnd:'4.28',govt_bnd:'7.49',reit:'10.58',
+emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'1.78',large_cap:'8.26',cash:'29.45'
+},{
+date:'3/28/2016',volatility:'13.32',commdty:'42.41',ig_bnd:'2.16',hy_bnd:'0.32',govt_bnd:'16.47',reit:'0.53',
+emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'0.00',large_cap:'0.00',cash:'24.78'
+},{
+date:'3/15/2016',volatility:'13.32',commdty:'42.41',ig_bnd:'2.16',hy_bnd:'0.00',govt_bnd:'16.47',reit:'0.53',
+emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'0.00',large_cap:'0.00',cash:'25.10'
+},{
+date:'3/11/2016',volatility:'13.32',commdty:'42.41',ig_bnd:'2.16',hy_bnd:'0.00',govt_bnd:'16.47',reit:'0.48',
+emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'0.00',large_cap:'0.00',cash:'25.15'
+},{
+date:'3/1/2016',volatility:'13.32',commdty:'42.41',ig_bnd:'2.16',hy_bnd:'0.00',govt_bnd:'16.47',reit:'0.00',
 emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'0.00',large_cap:'0.00',cash:'25.63'
 },{
 date:'2/19/2016',volatility:'12.79',commdty:'0.68',ig_bnd:'12.96',hy_bnd:'0.00',govt_bnd:'34.83',reit:'0.00',
@@ -2482,7 +2500,7 @@ emrg_mrkt:'14.47',intl_stk:'5.98',small_cap:'5.00',large_cap:'19.70',cash:'7.41'
 
 		$scope.filtered_entries = $scope.entries.sort(sortEntries);
 		$scope.year_fund = [{
-YEAR:'YTD (3/8/2016)',MODEL:'2.98',SP500:'-1.64',MSCI_WORLD:'-3.32',MSTAR_TACTICAL:'-2.35'
+YEAR:'YTD (3/8/2016)',MODEL:'0.92',SP500:'1.75',MSCI_WORLD:'-1.77',MSTAR_TACTICAL:'N/A'
 },{
 YEAR:'2015',MODEL:'6.21',SP500:'1.38',MSCI_WORLD:'-1.79',MSTAR_TACTICAL:'-5.88'
 },{
