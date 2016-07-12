@@ -42,6 +42,14 @@ angular.module('portfolioApp', [])
 		
 		$scope.entries = [
 {
+date:'7/5/2016',volatility:'16.52',commdty:'11.38',ig_bnd:'7.98',hy_bnd:'7.99',govt_bnd:'14.44',reit:'19.35',
+emrg_mrkt:'1.31',intl_stk:'0.00',small_cap:'0.00',large_cap:'5.40',cash:'15.62'
+},
+{
+date:'6/28/2016',volatility:'20.19',commdty:'0.00',ig_bnd:'8.06',hy_bnd:'13.49',govt_bnd:'8.35',reit:'11.52',
+emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'10.33',large_cap:'7.39',cash:'20.66'
+},
+{
 date:'6/2/2016',volatility:'20.19',commdty:'0.00',ig_bnd:'8.06',hy_bnd:'13.49',govt_bnd:'8.35',reit:'11.52',
 emrg_mrkt:'0.00',intl_stk:'0.00',small_cap:'10.33',large_cap:'10.56',cash:'17.49'
 },
@@ -2516,7 +2524,7 @@ emrg_mrkt:'14.47',intl_stk:'5.98',small_cap:'5.00',large_cap:'19.70',cash:'7.41'
 
 		$scope.filtered_entries = $scope.entries.sort(sortEntries);
 		$scope.year_fund = [{
-YEAR:'YTD (6/2/2016)',MODEL:'-3.28',SP500:'3.71',MSCI_WORLD:'0.95',MSTAR_TACTICAL:''
+YEAR:'YTD (7/5/2016)',MODEL:'-0.34',SP500:'3.86',MSCI_WORLD:'-1.13',MSTAR_TACTICAL:''
 },{
 YEAR:'2015',MODEL:'6.21',SP500:'1.38',MSCI_WORLD:'-1.79',MSTAR_TACTICAL:'-5.88'
 },{
