@@ -42,6 +42,24 @@ angular.module('portfolioApp', [])
 		
 		$scope.entries = [
 {
+date:'10/4/2016',volatility:'21.04',commdty:'0.86',ig_bnd:'0.00',hy_bnd:'23.27',govt_bnd:'1.27',reit:'3.37',
+emrg_mrkt:'16.39',intl_stk:'0.00',small_cap:'17.04',large_cap:'15.09',cash:'1.67'
+},{
+date:'9/21/2016',volatility:'24.34',commdty:'2.05',ig_bnd:'6.92',hy_bnd:'17.52',govt_bnd:'0.73',reit:'3.42',
+emrg_mrkt:'13.46',intl_stk:'1.24',small_cap:'12.64',large_cap:'11.48',cash:'6.21'
+},{
+date:'9/16/2016',volatility:'24.34',commdty:'2.05',ig_bnd:'6.92',hy_bnd:'17.52',govt_bnd:'0.73',reit:'3.42',
+emrg_mrkt:'13.46',intl_stk:'1.24',small_cap:'12.64',large_cap:'9.18',cash:'8.50'
+},{
+date:'9/13/2016',volatility:'24.34',commdty:'2.05',ig_bnd:'6.92',hy_bnd:'17.52',govt_bnd:'0.73',reit:'3.42',
+emrg_mrkt:'13.46',intl_stk:'1.24',small_cap:'12.64',large_cap:'11.48',cash:'6.21'
+},{
+date:'9/6/2016',volatility:'24.34',commdty:'2.05',ig_bnd:'6.92',hy_bnd:'17.52',govt_bnd:'0.73',reit:'4.89',
+emrg_mrkt:'13.46',intl_stk:'1.24',small_cap:'12.64',large_cap:'11.48',cash:'4.74'
+},{
+date:'9/2/2016',volatility:'24.34',commdty:'2.05',ig_bnd:'6.92',hy_bnd:'17.52',govt_bnd:'0.73',reit:'4.89',
+emrg_mrkt:'13.46',intl_stk:'1.24',small_cap:'12.64',large_cap:'11.48',cash:'4.74'
+},{
 date:'8/2/2016',volatility:'22.80',commdty:'12.34',ig_bnd:'5.87',hy_bnd:'9.26',govt_bnd:'3.23',reit:'14.05',
 emrg_mrkt:'8.98',intl_stk:'2.70',small_cap:'7.52',large_cap:'8.78',cash:'4.48'
 },{
@@ -2536,7 +2554,7 @@ emrg_mrkt:'14.47',intl_stk:'5.98',small_cap:'5.00',large_cap:'19.70',cash:'7.41'
 
 		$scope.filtered_entries = $scope.entries.sort(sortEntries);
 		$scope.year_fund = [{
-YEAR:'YTD (8/2/2016)',MODEL:'-1.20',SP500:'6.85',MSCI_WORLD:'2.63',MSTAR_TACTICAL:''
+YEAR:'YTD (10/7/2016)',MODEL:'1.00',SP500:'7.19',MSCI_WORLD:'2.98',MSTAR_TACTICAL:''
 },{
 YEAR:'2015',MODEL:'6.21',SP500:'1.38',MSCI_WORLD:'-1.79',MSTAR_TACTICAL:'-5.88'
 },{
