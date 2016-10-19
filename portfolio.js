@@ -2554,7 +2554,7 @@ emrg_mrkt:'14.47',intl_stk:'5.98',small_cap:'5.00',large_cap:'19.70',cash:'7.41'
 
 		$scope.filtered_entries = $scope.entries.sort(sortEntries);
 		$scope.year_fund = [{
-YEAR:'YTD (10/7/2016)',MODEL:'1.00',SP500:'7.19',MSCI_WORLD:'2.98',MSTAR_TACTICAL:''
+YEAR:'YTD (10/4/2016)',MODEL:'1.00',SP500:'7.19',MSCI_WORLD:'2.98',MSTAR_TACTICAL:''
 },{
 YEAR:'2015',MODEL:'6.21',SP500:'1.38',MSCI_WORLD:'-1.79',MSTAR_TACTICAL:'-5.88'
 },{
