@@ -33,7 +33,7 @@ angular.module('portfolioApp', [])
 
 		$scope.yearSelectOptions = [{date: 2000},{date: 2001},{date: 2002},{date: 2003},{date: 2004},
 		{date: 2005},{date: 2006},{date: 2007},{date: 2008},{date: 2009},{date: 2010},{date: 2011},
-		{date: 2012},{date: 2013},{date: 2014},{date: 2015}, {date: 2016}];
+		{date: 2012},{date: 2013},{date: 2014},{date: 2015}, {date: 2016}, {date: 2017}];
 
 		$scope.start_month =  $scope.monthSelectOptions[0];
 		$scope.start_yr = $scope.yearSelectOptions[0];
@@ -42,7 +42,7 @@ angular.module('portfolioApp', [])
 		
 		$scope.entries = [
 {
-date:'1/4/2016',volatility:'24.21',commdty:'0.00',ig_bnd:'0.00',hy_bnd:'23.90',govt_bnd:'0.00',reit:'0.00',
+date:'1/4/2017',volatility:'24.21',commdty:'0.00',ig_bnd:'0.00',hy_bnd:'23.90',govt_bnd:'0.00',reit:'0.00',
 emrg_mrkt:'0.00',intl_stk:'1.34',small_cap:'19.92',large_cap:'17.36',cash:'13.27'
 },{
 date:'12/27/2016',volatility:'19.62',commdty:'0.00',ig_bnd:'0.00',hy_bnd:'7.17',govt_bnd:'0.00',reit:'0.00',
