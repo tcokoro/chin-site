@@ -44,7 +44,7 @@ angular.module('portfolioApp', [])
 {
 date:'2/3/2017',volatility:'25.84',commdty:'0.00',ig_bnd:'3.20',hy_bnd:'16.17',govt_bnd:'0.00',reit:'0.00',
 emrg_mrkt:'11.04',intl_stk:'10.22',small_cap:'12.13',large_cap:'10.61',cash:'10.80'
-}{
+},{
 date:'2/2/2017',volatility:'25.84',commdty:'0.00',ig_bnd:'3.20',hy_bnd:'16.17',govt_bnd:'0.00',reit:'1.99',
 emrg_mrkt:'11.04',intl_stk:'10.22',small_cap:'12.13',large_cap:'10.61',cash:'8.80'
 },{
