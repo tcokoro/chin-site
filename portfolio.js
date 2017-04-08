@@ -42,6 +42,30 @@ angular.module('portfolioApp', [])
 		
 		$scope.entries = [
 {
+date:'4/7/2017',volatility:'25.17',commdty:'0.00',ig_bnd:'2.90',hy_bnd:'12.35',govt_bnd:'0.00',reit:'0.00',
+emrg_mrkt:'15.58',intl_stk:'14.37',small_cap:'5.62',large_cap:'14.41',cash:'9.60'
+},{
+date:'4/6/2017',volatility:'25.17',commdty:'0.00',ig_bnd:'2.90',hy_bnd:'12.35',govt_bnd:'0.00',reit:'0.00',
+emrg_mrkt:'15.58',intl_stk:'14.37',small_cap:'5.62',large_cap:'10.81',cash:'13.21'
+},{
+date:'4/4/2017',volatility:'25.17',commdty:'0.00',ig_bnd:'2.90',hy_bnd:'12.35',govt_bnd:'0.00',reit:'0.00',
+emrg_mrkt:'15.58',intl_stk:'14.37',small_cap:'5.62',large_cap:'14.41',cash:'9.60'
+},{
+date:'3/28/2017',volatility:'25.97',commdty:'0.00',ig_bnd:'9.74',hy_bnd:'11.37',govt_bnd:'0.00',reit:'10.20',
+emrg_mrkt:'11.58',intl_stk:'9.36',small_cap:'10.61',large_cap:'5.62',cash:'5.56'
+},{
+date:'3/27/2017',volatility:'25.97',commdty:'0.00',ig_bnd:'5.84',hy_bnd:'11.37',govt_bnd:'0.00',reit:'10.20',
+emrg_mrkt:'11.58',intl_stk:'9.36',small_cap:'10.61',large_cap:'5.62',cash:'9.45'
+},{
+date:'3/20/2017',volatility:'25.97',commdty:'0.00',ig_bnd:'5.84',hy_bnd:'11.37',govt_bnd:'0.00',reit:'0.00',
+emrg_mrkt:'11.58',intl_stk:'9.36',small_cap:'10.61',large_cap:'5.62',cash:'19.65'
+},{
+date:'3/16/2017',volatility:'25.97',commdty:'0.00',ig_bnd:'5.84',hy_bnd:'16.24',govt_bnd:'0.00',reit:'0.00',
+emrg_mrkt:'11.58',intl_stk:'9.36',small_cap:'10.61',large_cap:'5.62',cash:'14.78'
+},{
+date:'3/15/2017',volatility:'25.97',commdty:'0.00',ig_bnd:'5.84',hy_bnd:'16.24',govt_bnd:'0.00',reit:'10.20',
+emrg_mrkt:'11.58',intl_stk:'9.36',small_cap:'10.61',large_cap:'5.62',cash:'4.58'
+},{
 date:'3/2/2017',volatility:'25.97',commdty:'0.00',ig_bnd:'9.74',hy_bnd:'16.24',govt_bnd:'0.00',reit:'10.20',
 emrg_mrkt:'11.58',intl_stk:'9.36',small_cap:'10.61',large_cap:'5.62',cash:'0.68'
 },{
@@ -2614,7 +2638,7 @@ emrg_mrkt:'14.47',intl_stk:'5.98',small_cap:'5.00',large_cap:'19.70',cash:'7.41'
 
 		$scope.filtered_entries = $scope.entries.sort(sortEntries);
 		$scope.year_fund = [{
-YEAR:'YTD (3/6/2017)',MODEL:'-1.36',SP500:'6.85',MSCI_WORLD:'5.58',MSTAR_TACTICAL:''
+YEAR:'YTD (4/7/2017)',MODEL:'0.90',SP500:'5.90',MSCI_WORLD:'5.45',MSTAR_TACTICAL:''
 },{
 YEAR:'2016',MODEL:'1.04',SP500:'11.96',MSCI_WORLD:'5.63',MSTAR_TACTICAL:'6.01'
 },{
